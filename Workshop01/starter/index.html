@@ -7,32 +7,70 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <!-- TODO Task 3: Add navigation menu here -->
-    
-    
-    <!-- TODO Task 1: Add your main content here -->
-    <!-- Use  h2, p, and img tags -->
-     <h2>Tinja Pennanen</h2>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section id="home">
-            <!-- Add your heading, subheading, paragraph, and image here -->
-            
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h1>Tinja Pennanen</h1>
+                <h2>Creative Developer in Progress</h2>
+                <p>
+                    Hi! I'm Tinja, an information processing student passionate about web development,
+                    design, and building meaningful digital experiences. This is my first workshop page.
+                </p>
+            </div>
+
+            <div class="hero-image">
+                <img src="kuvat/jokukuva.jpg" alt="Profile photo">
+            </div>
         </section>
-        
-        <!-- TODO Task 1 & 3: Add an about section -->
-        <section id="about">
-            
+
+        <!-- About Section -->
+        <section id="about" class="hero">
+            <div class="hero-text">
+            <h2>About Me</h2>
+            <p>
+                I enjoy learning new technologies, experimenting with UI design, and improving my
+                skills through hands‑on projects like this one. My goal is to create clean,
+                user‑friendly interfaces.
+            </p>
+            </div>
         </section>
-        
-        <!-- TODO Task 4: Add contact form section here -->
-        <section id="contact">
-            
+
+        <!-- Contact Form -->
+        <section id="contact" class="hero">
+            <div class="hero-text">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name</label>
+                <input id="name" type="text" required>
+
+                <label for="email">Email</label>
+                <input id="email" type="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+            </div>
         </section>
+
     </main>
-    
-    <!-- Optional: Add a footer -->
+
     <footer>
-        
+        <p>© 2026 Tinja Pennanen</p>
     </footer>
+
 </body>
 </html>
