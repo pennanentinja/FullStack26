@@ -1,0 +1,91 @@
+<!-- Sivuston perusasetukset: doctype, kieli, meta-tiedot ja CSS-linkitys -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop1</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body> <!--Sivun varsinaisen sisällön alku-->
+
+    <!-- Sivun navigaatio -->
+    <nav>
+        <ul>
+            <li><a href="#home">Minä</a></li>
+            <li><a href="#about">Tietoa</a></li>
+            <li><a href="#contact">Ota yhteyttä</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- Yleistä tekstiä minusta -->
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h1>Tinja Pennanen</h1>
+                <h2>Minä</h2>
+                <p>
+                    Jotain pientä itsestäni tähän väliin. Olen 21-vuotias toisen vuoden Tietojenkäsittelyn opiskelija Tikkurilan Laureassa.
+                    Olen tykännyt opinnoistani todella paljon, ja ala on todella alkanut tuntua omalta. Vapaa-ajallani tykkään lukea kirjoja, kuunnella musiikkia sekä hengailla ystävieni kanssa. 
+                    Olen tällä hetkellä myös töissä Nesteen huoltoasemalla, jossa työskentelen kassalla ja asiakaspalvelussa. Olen tykännyt työpaikastani todella paljon, vaikka välillä
+                    onkin rankkaa tehdä töitä koulun ohella. Töiden ja opintojen lisäksi harrastan myös salibandya, jota olen pelannut noin 10 vuotta, joten se vie myös osan minun ajastani.
+                </p>
+            </div>
+
+            <div class="hero-image">
+                <img src="kuvat/jokukuva.jpg" alt="Profile photo">
+            </div>
+        </section>
+
+        <!-- Tiedot minusta opiskelijana -->
+        <section id="about" class="hero">
+            <div class="hero-text">
+            <h2>Tietoa minusta opiskelijana</h2>
+            <p>
+                Vaikka olen jo toisen vuoden opiskelija, ei minulla ole vielä ihan hirveästi kokemusta web-kehityksestä, vaikka se minua kiinnostaakin aika paljon.
+                Mutta koen olevani kuitenkin hyvässä tilanteessa siihen nähden kuin mitä olin vuosi sitten. Kurssit ja niiden opettajat ovat antaneet minulle todella hyvän pohjan
+                web-kehitykseen, niin back-endiin kuin front-endiinkin, josta olen todella tyytyväinen. Tietysti minulla on vielä paljon opittavaa, mutta uskon että
+                pääsen hyvään tuntumaan tämän kurssin myötä. On myös kiva päästä tällä kurssilla palauttamaan jo aiemmin opittuja asioita mieleen ihan käytännön tekemisen kautta.
+                <br><br>
+                Haluaisin tämän kurssin myötä kehittyä paremmaksi visuaaliseksi suunnittelijaksi, sillä koen sen olevan tällä hetkellä yksi heikoimmista osa-alueistani.
+                Aiemmilla kursseilla tekemäni projektit ovat olleet kyllä toimivia, mutta värimaailmat ja visuaalisuus eivät ole olleet ihan sitä mitä olisin halunnut.
+                Mutta kokonaisuudessaan tavoitteenani on oppia rakentamaan toimivia kokonaisuuksia, jotka ovat myös visuaalisesti itselleni mieluisia. Opin mielestäni todella nopeasti,
+                kunhan siihen löytyy tarpeeksi hyvät resurssit ja aikaa harjoitella. 
+            </p>
+            </div>
+        </section>
+
+        <!-- Viestin lähetys formi -->
+        <section id="contact" class="hero">
+            <div class="hero-text">
+            <h2>Ota yhteyttä</h2>
+            <form>
+                <label for="name">Nimi</label>
+                <input id="name" type="text" required>
+
+                <label for="email">Sähköposti</label>
+                <input id="email" type="email" required>
+
+                <label for="message">Viesti</label>
+                <textarea id="message" rows="5" required></textarea>
+
+                <input type="submit" value="Lähetä viesti">
+            </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer ja somelinkit -->
+    <footer>
+    <p>© 2026 Tinja Pennanen</p>
+    <div class="social-links">
+        <a href="https://www.instagram.com/pennanentinja?igsh=MTFsamJoMGs2d2VyMQ%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+        <a href="https://github.com/pennanentinja" target="_blank">GitHub</a>
+    </div>
+</footer>
+
+
+</body>
+</html>

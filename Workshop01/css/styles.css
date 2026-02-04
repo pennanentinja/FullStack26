@@ -1,29 +1,31 @@
-/* =================================
-   CSS Styles for Workshop 01
-   ================================= */
+/*Smooth skrollaus sivun linkkeihin*/
+html {
+    scroll-behavior: smooth;
+}
 
-/* Reset */
+/* Perusasetukset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Sivuston yleiset tyylit*/
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
-    padding: 0;   /* ← Tämä on tärkein muutos */
+    padding: 0;
 }
 
 
-/* Navigation */
+/* Navigaation tyylitykset */
 nav {
     background-color: #7ba6e2;
-    padding: 10px 0;      /* Ei sivuttaispaddingia */
-    margin: 0;            /* Ei marginaaleja */
-    width: 100%;          /* Täysi leveys */
+    padding: 10px 0;
+    margin: 0;
+    width: 100%;
 }
 
 nav ul {
@@ -46,7 +48,7 @@ nav a:hover {
 }
 
 
-/* Hero Layout */
+/* Hero-osuuden layout */
 .hero {
     display: flex;
     justify-content: space-between;
@@ -72,9 +74,15 @@ nav a:hover {
     width: 100%;
     border-radius: 10px;
     border: 3px solid #6b7ebd;
+    transition: transform 0.4s ease;
 }
 
-/* Headings */
+.hero-image img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Otsikoiden tyylitykset */
 h1 {
     font-size: 2.5rem;
     color: #2a4d69;
@@ -87,7 +95,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Paragraphs */
+/* Kappaleiden tyylitykset */
 p {
     max-width: 700px;
     margin: 10px 0;
@@ -95,13 +103,13 @@ p {
     line-height: 1.7;
 }
 
-/* Sections */
+/* Sektioiden yleinen tyyli */
 section {
     padding: 40px 0;
     border-bottom: 1px solid #ddd;
 }
 
-/* Form Styles */
+/* Lomakkeen/Formin tyylitykset */
 form {
     max-width: 500px;
     margin: 0 auto;
@@ -134,14 +142,27 @@ input[type="submit"]:hover {
     background-color: #2a4d69;
 }
 
-/* Footer */
+/* Footerin ja some-linkkien tyylitykset*/
 footer {
     text-align: center;
     margin-top: 40px;
+    padding: 20px 0;
     color: #666;
 }
 
-/* Responsive Design */
+.social-links a {
+    margin: 0 10px;
+    color: #2a4d69;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsiivisuuden asetukset (tabletteihin) */
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
@@ -162,6 +183,7 @@ footer {
     }
 }
 
+/*Responsiivisuuden asetukset (puhelimiin)*/
 @media (max-width: 480px) {
     img {
         max-width: 100%;
